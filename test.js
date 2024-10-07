@@ -25,4 +25,10 @@ describe('Pengujian Fungsi Matematika', function () {
     it('seharusnya mengembalikan error saat menambahkan null + "2"', function () {
         expect(() => tambah(null, "2")).to.throw('Tidak bisa jika nilainya string atau null');
     });
+    it('seharusnya mengembalikan error saat mengkalikan "2" * "2"', function () {
+        expect(() => kali("2", "2")).to.throw('Tidak bisa jika nilainya string atau null');
+    });
+    it('seharusnya mengembalikan error saat mengalikan null * "2"', function () {
+        expect(() => kali(null, "2")).to.throw('Tidak bisa jika nilainya string atau null');
+    });
 });

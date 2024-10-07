@@ -6,6 +6,9 @@ function tambah(a, b) {
 }
 
 function kali(a, b) {
+    if (a === null || b === null || typeof a === "string" || typeof b === "string") {
+        throw new Error("Tidak bisa jika nilainya string atau null");
+    }
     return a * b;
 }
 function kurang(a, b) {
