@@ -7,7 +7,7 @@
     <style>
         #errorMessage {
             color: red;
-            display: none; /* Hidden by default */
+            display: none; 
         }
     </style>
 </head>
@@ -21,21 +21,20 @@
         <input type="password" id="password" name="password" required>
         <br><br>
         <button type="submit" id="loginButton">Login</button>
-        <p id="errorMessage">Invalid username or password.</p> <!-- Error message -->
+        <p id="errorMessage">Invalid username or password.</p> 
     </form>
 
     <script>
         function handleLogin(event) {
-            event.preventDefault(); // Prevent form submission
+            event.preventDefault();
             const username = document.getElementById('username').value;
             const password = document.getElementById('password').value;
 
-            // Simulated login validation
             if (username === 'testuser' && password === 'password123') {
-                // Redirect to dashboard page
-                window.location.href = 'dashboard.html'; // Ensure this file exists
+
+                window.location.href = 'dashboard.html'; 
             } else {
-                // Show error message
+
                 document.getElementById('errorMessage').style.display = 'block';
             }
         }
