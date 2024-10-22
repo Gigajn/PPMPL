@@ -16,7 +16,7 @@ describe('UI Testing using Selenium', function () {
     });
 
     it('should load the login page', async function () {
-        await driver.get('C:/Users/user/Downloads/Prak_selenium-ui-test-main/Prak_selenium-ui-test-main/loginPage.html'); // Update path as needed
+        await driver.get('D:/TITIP/ppmpl/ppmpl-seleniumUI/loginPage.html'); // Update path as needed
         const title = await driver.getTitle();
         expect(title).to.equal('Login Page');
     });
@@ -47,7 +47,7 @@ describe('UI Testing using Selenium', function () {
     });
 
     it('should handle failed login attempts', async function () {
-        await driver.get('C:/Users/user/Downloads/Prak_selenium-ui-test-main/Prak_selenium-ui-test-main/loginPage.html'); // Reload the login page
+        await driver.get('D:/TITIP/ppmpl/ppmpl-seleniumUI/loginPage.html'); // Reload the login page
         
         await driver.findElement(By.css('#username')).sendKeys('wronguser');
         await driver.findElement(By.css('#password')).sendKeys('wrongpassword');
